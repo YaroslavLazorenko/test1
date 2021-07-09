@@ -1,4 +1,4 @@
-let a = 1009
+/*let a = 1009
 let b = 100
 let c = false
 
@@ -55,4 +55,28 @@ for (i = 0; i < 100000000; i++) {
 }
 
 alert('Консоль будет очищен!')
-console.clear()
+console.clear()*/
+
+(() => {
+  const refs = {
+  //  openModalBtn: document.querySelector('[data-modal-open]'),
+ //   closeModalBtn: document.querySelector('[data-modal-close]'),
+    roket: document.querySelector('[data-roket]'),
+  };
+
+ // refs.openModalBtn.addEventListener('click', toggleModal);
+//  refs.closeModalBtn.addEventListener('click', toggleModal);
+
+window.addEventListener('scroll', function() {
+    var y = window.scrollY;
+    y < 100 ? refs.roket.classList.add('is-hidden') : refs.roket.classList.remove('is-hidden');
+
+});
+    top.onclick = function() {
+        refs.roket.classList.add('is-hidden');
+  };
+    
+  //function toggleModal() {
+   // refs.modal.classList.toggle('is-hidden');
+ // }
+})();
