@@ -63,7 +63,7 @@ console.clear()*/
   };
 window.addEventListener('scroll', function() {
     var y = window.scrollY;
-    y < 100 ? refs.roket.classList.add('is-hidden') : refs.roket.classList.remove('is-hidden');
+    y < 150 ? refs.roket.classList.add('is-hidden') : refs.roket.classList.remove('is-hidden');
 });
     top.onclick = function() {
         refs.roket.classList.add('is-hidden');
